@@ -50,6 +50,7 @@ namespace API_Template {
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API_Template v1"));
             }
 
+            app.UseCors();
             
             app.UseHttpsRedirection();
 
